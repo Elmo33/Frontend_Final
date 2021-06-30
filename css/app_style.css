@@ -1,0 +1,128 @@
+.room{
+    flex-grow: 1;
+    background: #36393e;
+    display: flex;
+    height: calc(100vh - 46px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.messages {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.input-container {
+    background: #484b52;
+    color: #caccd0;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: calc(100% - 42px);
+    margin-bottom: 30px;
+    font-size: 15px;
+    resize: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-shrink: 0;
+}
+
+.message-container {
+    width: calc(100% - 42px);
+    flex-direction: row;
+    display: flex;
+    border-top: solid;
+    border-width: 1px;
+    border-color: #393e46;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    flex-shrink: 0;
+}
+
+.message-right {
+    flex-grow: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: -4px;
+    width: 100%;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    min-width: 100px;
+}
+.message-flair {
+    margin: 2px;
+    font-size: 15px;
+}
+.message-text {
+    margin-left: 2px;
+    width: 100%;
+    overflow: hidden;
+    color: #A6A6A6FF;
+    word-break: break-word;
+}
+.user-flair {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(37, 210, 83);
+
+}
+
+.ui-button-match {
+    background: #484b52;
+    border: none;
+    color: #a5acbc;
+    cursor: pointer;
+    text-align: center;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 113px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-right: 2px;
+    padding: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-right: solid;
+    border-width: 1px;
+    border-color: #5b5e66;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    user-select: none;
+}
+
+.room-component-input-textarea {
+    background: 0 0;
+    color: #caccd0;
+    border: none;
+    border-radius: 6px;
+    height: 34px;
+    width: 96%;
+    font-size: 15px;
+    resize: none;
+    padding: 8px;
+    padding-left: 6px;
+    margin-left: 4px;
+    white-space: pre;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/app_style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Quickchat</title>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <ul>
+                <li class="active">WELCOME</li>
+                <li id="index">HOME</li>
+                <li class="home" id="chat">SUPPORT</li>
+                <li id="posts">POSTS</li>
+                <li href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</header>
+<div id="container" class="container">
+    <div class="room">
+        <div class="messages" id="messages">
+            <div class="message-container">
+                <div class="message-right">
+                    <div class="message-flair">
+                        <span class="user-flair">Assistant</span>
+                    </div>
+                    <div class="message-text">
+                        <div>Hello, how can i help you?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="ui-button-match">Send</div>
+            <textarea class="room-component-input-textarea" id="room-input" placeholder="Say Something..."></textarea>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/nav_redirect.js"></script>
+</div>
+</body>
+</html>
