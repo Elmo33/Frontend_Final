@@ -7,6 +7,7 @@ submit.addEventListener('click', function (event) {
 function validate() {
     var email = document.getElementById("email");
     var password = document.getElementById("password");
+
     if (email.value === "test@gmail.com" && password.value === "test1234") {
         alert("Login successfully");
         window.location = "chat.html";
@@ -17,12 +18,12 @@ function validate() {
         alert("Enter an email!")
     }
     else if (password.value === ""){
-        email.classList.add("error_borders");
+        password.classList.add("error_borders");
         alert("Enter a password!")
     }
     else {
         attempt--;
-        alert("You have left " + attempt + " attempt;");
+        alert("Incorrect credentials, You have left " + attempt + " attempt;");
 
         if (!validateEmail(email.value)) {
             email.classList.add("error_borders");
